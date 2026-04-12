@@ -69,10 +69,10 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.15 }}
-                className={`p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-colors ${index === 2 ? 'sm:col-span-2' : ''}`}
+                className={`p-6 rounded-2xl bg-black/5 border border-black/10 hover:border-purple-500/50 transition-colors ${index === 2 ? 'sm:col-span-2' : ''}`}
               >
-                <domain.icon className="w-10 h-10 text-purple-400 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{domain.title}</h3>
+                <domain.icon className="w-10 h-10 text-purple-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2 text-foreground">{domain.title}</h3>
                 <p className="text-sm text-muted-foreground">{domain.description}</p>
               </motion.div>
             ))}

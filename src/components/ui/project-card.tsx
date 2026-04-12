@@ -57,23 +57,23 @@ export function ProjectCard({ title, description, tags, githubUrl, liveUrl, isHi
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className={`h-full relative group rounded-xl ${isHighlighted ? 'p-[2px] bg-gradient-to-br from-purple-500 to-blue-500' : ''}`}
     >
-      <Card className="h-full bg-background/50 backdrop-blur-sm border-border/50 hover:bg-white/5 transition-colors duration-300 relative overflow-hidden group">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <Card className="h-full bg-card backdrop-blur-sm border-border hover:bg-accent/50 transition-colors duration-300 relative overflow-hidden group shadow-sm hover:shadow-md">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         
         <CardContent className="p-6 flex flex-col h-full transform-gpu" style={{ transform: "translateZ(30px)" }}>
           {isHighlighted && (
-            <span className="text-xs font-bold text-purple-400 mb-2 uppercase tracking-wider">
+            <span className="text-xs font-bold text-purple-600 mb-2 uppercase tracking-wider">
               ✦ Highlighted Project
             </span>
           )}
-          <h3 className="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">{title}</h3>
+          <h3 className="text-2xl font-bold mb-3 text-foreground">{title}</h3>
           <p className="text-muted-foreground text-sm flex-grow mb-6 leading-relaxed">
             {description}
           </p>
           
           <div className="flex flex-wrap gap-2 mb-6">
             {tags.map((tag) => (
-              <span key={tag} className="px-2.5 py-1 text-xs font-medium rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20">
+              <span key={tag} className="px-2.5 py-1 text-xs font-medium rounded-md bg-purple-100 text-purple-700 border border-purple-200">
                 {tag}
               </span>
             ))}
@@ -81,12 +81,12 @@ export function ProjectCard({ title, description, tags, githubUrl, liveUrl, isHi
 
           <div className="flex gap-4 mt-auto">
             {githubUrl && (
-              <a href={githubUrl} target="_blank" rel="noreferrer" className="flex items-center text-sm font-medium text-gray-400 hover:text-white transition-colors">
+              <a href={githubUrl} target="_blank" rel="noreferrer" className="flex items-center text-sm font-medium text-muted-foreground hover:text-purple-600 transition-colors">
                 <Code2 className="w-4 h-4 mr-1.5" /> Source
               </a>
             )}
             {liveUrl && (
-              <a href={liveUrl} target="_blank" rel="noreferrer" className="flex items-center text-sm font-medium text-gray-400 hover:text-white transition-colors">
+              <a href={liveUrl} target="_blank" rel="noreferrer" className="flex items-center text-sm font-medium text-muted-foreground hover:text-purple-600 transition-colors">
                 <ExternalLink className="w-4 h-4 mr-1.5" /> Live Demo
               </a>
             )}

@@ -35,8 +35,16 @@ export default function Navbar({ onToggleTerminal }: { onToggleTerminal: () => v
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="text-xl font-bold tracking-tighter flex items-center gap-2">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
+        <a href="#hero" className="flex items-center gap-3 group">
+          <motion.img 
+            src="/favicon.ico" 
+            alt="Satya Logo" 
+            className="w-10 h-10 rounded-xl shadow-sm border border-purple-100"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          />
+          <span className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 leading-normal group-hover:from-purple-500 group-hover:to-blue-500 transition-all">
             Satya.dev
           </span>
         </a>
@@ -60,7 +68,7 @@ export default function Navbar({ onToggleTerminal }: { onToggleTerminal: () => v
             variant="outline"
             size="sm"
             onClick={onToggleTerminal}
-            className="hidden md:flex items-center gap-2 border-purple-500/30 hover:bg-purple-500/10 transition-colors rounded-full"
+            className="hidden md:flex items-center gap-2 border-purple-500/30 text-purple-700 hover:bg-purple-500/10 transition-colors rounded-full"
           >
             <Terminal className="w-4 h-4" />
             <span>Terminal</span>
@@ -91,7 +99,7 @@ export default function Navbar({ onToggleTerminal }: { onToggleTerminal: () => v
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-muted-foreground hover:text-foreground block px-4 py-2 rounded-md hover:bg-white/5 transition-colors"
+                  className="text-muted-foreground hover:text-foreground block px-4 py-2 rounded-md hover:bg-black/5 transition-colors"
                 >
                   {link.name}
                 </a>

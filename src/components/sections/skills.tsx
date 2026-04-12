@@ -50,10 +50,10 @@ export default function SkillsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm"
+              className="p-6 rounded-2xl bg-card border border-border backdrop-blur-sm shadow-sm hover:shadow-md transition-all"
             >
-              <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-purple-500 inline-block" />
+              <h3 className="text-xl font-semibold mb-6 flex items-center gap-2 text-foreground">
+                <span className="w-2 h-2 rounded-full bg-purple-600 inline-block" />
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -65,7 +65,7 @@ export default function SkillsSection() {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 + sIdx * 0.05 }}
                     whileHover={{ scale: 1.05 }}
-                    className="px-4 py-2 rounded-full bg-black/40 border border-white/5 text-sm font-medium text-gray-300 hover:text-white hover:border-purple-500/50 cursor-default transition-colors"
+                    className="px-4 py-2 rounded-full bg-secondary border border-border text-sm font-medium text-secondary-foreground hover:bg-purple-100 hover:text-purple-700 hover:border-purple-200 cursor-default transition-colors"
                   >
                     {skill}
                   </motion.div>

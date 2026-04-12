@@ -16,7 +16,7 @@ export default function Home() {
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative selection:bg-purple-500/30">
+    <main className="flex min-h-screen flex-col items-center justify-between relative selection:bg-purple-200">
       <CustomCursor />
       
       <Navbar onToggleTerminal={() => setIsTerminalOpen(!isTerminalOpen)} />
@@ -37,8 +37,8 @@ export default function Home() {
       />
 
       {/* Footer */}
-      <footer className="w-full py-6 text-center border-t border-white/10 bg-black/50 backdrop-blur-sm mt-12">
-        <p className="text-sm text-gray-500">
+      <footer className="w-full py-6 text-center border-t border-border bg-card backdrop-blur-sm mt-12">
+        <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Satya. Built with Next.js, Framer Motion, and Tailwind CSS.
         </p>
       </footer>

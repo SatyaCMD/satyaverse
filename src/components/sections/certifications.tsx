@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { Award, Trophy } from "lucide-react";
 
 const certifications = [
-  { title: "Cisco Certifications", issuer: "Cisco" },
-  { title: "Cognizant AI Simulation", issuer: "Cognizant" }
+  { title: "Python Essentials 1", issuer: "Cisco Networking Academy", date: "Jul 2023" },
+  { title: "Cybersecurity Essentials", issuer: "Cisco Networking Academy", date: "Jul 2023" },
+  { title: "Introduction to Internet of Things (IoT)", issuer: "Cisco Networking Academy", date: "Jul 2023" },
+  { title: "Artificial Intelligence Job Simulation", issuer: "Cognizant", date: "Dec 2023" },
+  { title: "Building Android Apps with React Native", issuer: "Professional Development", date: "Sep 2024" }
 ];
 
 const achievements = [
@@ -25,15 +28,15 @@ export default function CertificationsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3"
+                className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3 text-foreground"
               >
-                <Award className="text-purple-400 w-8 h-8" /> Certifications
+                <Award className="text-purple-600 w-8 h-8" /> Certifications
               </motion.h2>
               <motion.div 
                 initial={{ opacity: 0, width: 0 }}
                 whileInView={{ opacity: 1, width: "80px" }}
                 viewport={{ once: true }}
-                className="h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
+                className="h-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full"
               />
             </div>
 
@@ -45,10 +48,13 @@ export default function CertificationsSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-colors backdrop-blur-sm flex items-center justify-between group"
+                  className="p-6 rounded-2xl bg-card border border-border hover:border-purple-300 shadow-sm hover:shadow-md transition-all backdrop-blur-sm flex items-center justify-between group"
                 >
-                  <h3 className="text-lg font-semibold text-white group-hover:text-purple-300 transition-colors">{cert.title}</h3>
-                  <span className="text-sm px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">{cert.issuer}</span>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-purple-600 transition-colors">{cert.title}</h3>
+                  <div className="flex flex-col items-end gap-1">
+                    <span className="text-sm px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-right">{cert.issuer}</span>
+                    <span className="text-xs text-muted-foreground mr-1">{cert.date}</span>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -61,15 +67,15 @@ export default function CertificationsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3"
+                className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3 text-foreground"
               >
-                <Trophy className="text-blue-400 w-8 h-8" /> Achievements
+                <Trophy className="text-blue-600 w-8 h-8" /> Achievements
               </motion.h2>
               <motion.div 
                 initial={{ opacity: 0, width: 0 }}
                 whileInView={{ opacity: 1, width: "80px" }}
                 viewport={{ once: true }}
-                className="h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
+                className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full"
               />
             </div>
 
@@ -81,9 +87,9 @@ export default function CertificationsSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="p-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/20 hover:border-blue-500/50 transition-colors backdrop-blur-sm group"
+                  className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all backdrop-blur-sm group"
                 >
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition-all">{achievement.title}</h3>
+                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">{achievement.title}</h3>
                   <p className="text-muted-foreground">{achievement.description}</p>
                 </motion.div>
               ))}
