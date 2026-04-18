@@ -10,7 +10,7 @@ const projects = [
     tags: ["Python", "TensorFlow", "React", "Next.js", "FastAPI"],
     githubUrl: "https://github.com/SatyaCMD/ai-stock-price-predictor",
     liveUrl: "https://ai-stockprice-predictor.satyacmd.dev/",
-    imageUrls: ["/project_aistock (dashboard).png", "project_aistock (login_page).png", "project_aistock (signup_page).png", "project_aistock (otp_page).png"],
+    imageUrls: ["/project_aistock (dashboard).png", "/project_aistock (login_page).png", "/project_aistock (signup_page).png", "/project_aistock (otp_page).png"],
     isHighlighted: true,
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     description: "A minimal, educational operating system written from scratch to understand process management, memory allocation, and hardware interactions.",
     tags: ["Shell-Scripting", "Bash-Scripting", "x86 Architecture"],
     githubUrl: "https://github.com/SatyaCMD/Axiom-OS-The-Custom-made-OS",
-    imageUrls: ["/project_os(login).png", "/project_os(os_installation).png", "/project_os(desktop).png", "/project_os(terminal).png", "/project_os(shutdown).png"],
+    imageUrls: ["/project_os (login).png", "/project_os (os_installation).png", "/project_os (desktop).png", "/project_os (terminal).png", "/project_os (shutdown).png"],
   },
   {
     title: "Airline Booking Simulator",

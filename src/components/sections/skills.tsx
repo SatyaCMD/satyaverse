@@ -9,25 +9,25 @@ const categories = [
     title: "Programming Languages",
     icon: Code,
     skills: ["Python", "Java", "C++", "C", "TypeScript", "JavaScript"],
-    description: "Versatile in multi-paradigm programming, covering low-level memory management in C to high-level async patterns in TypeScript. Used extensively to build custom OS features and robust backend APIs.",
+    description: "Versatile in multi-paradigm programming, with hands-on experience ranging from low-level system programming in C to high-level asynchronous development in TypeScript. Applied these skills in building custom OS components and developing scalable backend APIs.",
   },
   {
     title: "Web Technologies",
     icon: Layout,
     skills: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "HTML5", "CSS3"],
-    description: "Expertise in architecting scalable SSR and SSG applications using Next.js. Capable of designing responsive, pixel-perfect user interfaces and connecting them to highly performant Express servers.",
+    description: "Experienced in building scalable web applications using Next.js, with a focus on responsive, pixel-perfect user interfaces and seamless integration with high-performance Express.js backends.",
   },
   {
     title: "AI / ML",
     icon: Brain,
-    skills: ["TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "NumPy", "OpenCV"],
+    skills: ["TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "NumPy"],
     description: "Deep capability in training and deploying sequential models (LSTMs) and transformers. Passionate about computer vision, data wrangling pipeline optimization, and AI stock prediction architectures.",
   },
   {
     title: "Cybersecurity",
     icon: Shield,
-    skills: ["Wireshark", "Metasploit", "Burp Suite", "Nmap", "Kali Linux", "OWASP Top 10"],
-    description: "Proficient in proactive threat hunting, vulnerability assessment, and securing edge applications. Proven hands-on background in penetration testing APIs against modern OWASP vectors.",
+    skills: ["Wireshark", "Metasploit", "Burp Suite", "Nmap"],
+    description: "Proficient in proactive threat hunting, vulnerability assessment, and securing edge applications. Proven hands-on background in penetration testing APIs against modern Burpsuite.",
   }
 ];
 
@@ -41,10 +41,10 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-100/30 via-transparent to-transparent pointer-events-none" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 text-center">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -52,7 +52,7 @@ export default function SkillsSection() {
           >
             Technical Arsenal
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: "100px" }}
             viewport={{ once: true }}
@@ -63,9 +63,9 @@ export default function SkillsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {categories.map((category, idx) => {
             const isExpanded = expandedIndex === idx;
-            
+
             return (
-              <motion.div 
+              <motion.div
                 key={category.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

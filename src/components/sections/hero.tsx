@@ -18,7 +18,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative h-screen flex flex-col items-center justify-center overflow-hidden w-full">
       <ParticlesBackground />
-      
+
       {/* Overlay gradient for depth */}
       <div className="absolute inset-0 bg-background/60 z-10" />
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
             Deploy Vision <ArrowRight className="ml-2 h-4 w-4" />
           </a>
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download="Satya-Resume.pdf" className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-md border-slate-200 bg-white hover:bg-slate-50 text-slate-900 font-semibold shadow-sm transition-all hover:-translate-y-0.5" })}>
-            Execute PDF_DL <Download className="ml-2 h-4 w-4" />
+            Download Resume <Download className="ml-2 h-4 w-4" />
           </a>
           <Button onClick={() => setIsResumeOpen(true)} variant="outline" size="lg" className="rounded-md border-indigo-200 bg-indigo-50/50 hover:bg-indigo-100 text-indigo-700 font-semibold shadow-sm transition-all hover:-translate-y-0.5">
             Analyze Metrics <BrainCircuit className="ml-2 h-4 w-4" />
