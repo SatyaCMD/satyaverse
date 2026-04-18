@@ -68,6 +68,7 @@ Make sure you have Node.js (v18 or higher) and npm installed on your system.
 ## 📫 Contact
 Interested in collaborating or discussing AI/Cybersecurity? Let's connect!
 - **GitHub**: [SatyaCMD](https://github.com/SatyaCMD)
-- **LinkedIn**: [Satya](https://linkedin.com/in/satyacmd)
+- **LinkedIn**: [Sai Satyabrata](https://www.linkedin.com/in/sai-satyabrata-623311280)
+- **Website**: [SatyaCMD](https://www.satyacmd.dev)
 
 <p align="center"><i>Crafted with passion using Next.js 15 and Tailwind CSS.</i></p>
