@@ -97,7 +97,7 @@ export function ResumeDialog({ isOpen, onClose }: ResumeDialogProps) {
             </div>
 
             <div className="p-4 border-t border-border bg-muted/30 flex justify-end gap-3">
-              <a href="/satya-resume.pdf" download className="px-5 py-2.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium rounded-lg text-sm flex items-center hover:opacity-90 transition-opacity shadow-sm">
+              <a href="/Resume.pdf" download="Satya-Resume.pdf" className="px-5 py-2.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium rounded-lg text-sm flex items-center hover:opacity-90 transition-opacity shadow-sm">
                 <Download className="w-4 h-4 mr-2" /> Download Original PDF
               </a>
             </div>
