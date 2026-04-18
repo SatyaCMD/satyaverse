@@ -27,12 +27,22 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#fafcff] text-foreground flex flex-col font-sans overflow-x-hidden selection:bg-purple-100">
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-purple-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "12s" }} />
-          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-blue-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "15s", animationDelay: "2s" }} />
-          <div className="absolute -bottom-[20%] left-[20%] w-[60%] h-[50%] rounded-full bg-pink-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "18s", animationDelay: "5s" }} />
+      <body className="min-h-screen bg-[#fafcff] text-slate-900 flex flex-col font-sans overflow-x-hidden selection:bg-indigo-100">
+        
+        {/* Technical Developer / Trading Grid Background */}
+        <div className="fixed inset-0 z-[-1] pointer-events-none">
+           {/* Deep technical grid background */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_40%,#000_70%,transparent_100%)]" />
+          
+          {/* Subtle architectural vertical tracking lines across the page for trading feel */}
+          <div className="absolute inset-0 flex justify-evenly pointer-events-none opacity-20">
+            <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
+            <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
+            <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
+            <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
+          </div>
         </div>
+
         {children}
       </body>
     </html>
