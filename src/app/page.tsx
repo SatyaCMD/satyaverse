@@ -17,7 +17,7 @@ export default function Home() {
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative selection:bg-purple-200">
+    <main className="flex min-h-screen flex-col items-center justify-between relative selection:bg-purple-200 w-full max-w-[100vw] overflow-x-hidden">
       <CustomCursor />
       
       <Navbar onToggleTerminal={() => setIsTerminalOpen(!isTerminalOpen)} />

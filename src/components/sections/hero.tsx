@@ -42,18 +42,19 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-4 text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl text-slate-900 leading-tight tracking-[-0.04em]"
+          className="mb-4 text-4xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl text-slate-900 leading-tight tracking-[-0.04em]"
         >
           {title}
         </motion.h1>
 
         {/* Typing Animation */}
-        <div className="h-8 md:h-12 flex justify-center items-center mb-8">
+        <div className="flex justify-center items-center mb-8 min-h-[3rem] w-full max-w-[100vw] overflow-hidden">
           <motion.p
             initial={{ opacity: 1 }}
-            className="text-lg md:text-2xl font-light text-slate-500 flex items-center font-mono"
+            className="text-sm sm:text-lg md:text-2xl font-light text-slate-500 flex flex-wrap justify-center items-center font-mono w-full"
           >
-            <span className="text-indigo-600 mr-2">{">"}</span>
+            <span className="text-indigo-600 mr-2 shrink-0">{">"}</span>
+            <span className="flex flex-wrap justify-center content-center max-w-full">
             {typingCharacters.map((char, index) => (
               <motion.span
                 key={index}
@@ -67,10 +68,11 @@ export default function HeroSection() {
                 {char}
               </motion.span>
             ))}
+            </span>
             <motion.span
               animate={{ opacity: [1, 0] }}
               transition={{ repeat: Infinity, duration: 0.8 }}
-              className="ml-1 inline-block h-[1.2em] w-2.5 bg-indigo-600 align-middle"
+              className="ml-1 inline-block h-[1.2rem] w-2 sm:w-2.5 bg-indigo-600 align-middle shrink-0"
             />
           </motion.p>
         </div>

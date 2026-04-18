@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   description: "AI Engineer, Cybersecurity Analyst, and Full Stack Developer.",
 };
 
+export const viewport: import("next").Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#fafcff] text-slate-900 flex flex-col font-sans overflow-x-hidden selection:bg-indigo-100">
+      <body className="min-h-screen bg-[#fafcff] text-slate-900 flex flex-col font-sans overflow-x-hidden w-full max-w-[100vw] selection:bg-indigo-100">
 
         {/* Technical Developer / Trading Grid Background */}
         <div className="fixed inset-0 z-[-1] pointer-events-none">

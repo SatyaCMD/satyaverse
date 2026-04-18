@@ -215,7 +215,7 @@ export function ProjectCard({ title, description, tags, githubUrl, liveUrl, imag
                     ))}
                   </div>
 
-                  <div className="flex gap-4 pt-4 border-t border-border">
+                  <div className="flex flex-wrap gap-4 pt-4 border-t border-border">
                     {githubUrl && (
                       <a href={githubUrl} target="_blank" rel="noreferrer" className="flex items-center px-6 py-3 rounded-xl bg-secondary hover:bg-secondary/80 text-secondary-foreground font-medium transition-colors">
                         <Code2 className="w-5 h-5 mr-2" /> Source Code
