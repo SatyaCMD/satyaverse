@@ -84,7 +84,7 @@ export default function HeroSection() {
           <a href="#projects" className={buttonVariants({ size: "lg", className: "rounded-md bg-slate-900 hover:bg-slate-800 text-white font-semibold transition-all hover:-translate-y-0.5 shadow-md" })}>
             Deploy Vision <ArrowRight className="ml-2 h-4 w-4" />
           </a>
-          <a href="/satya-resume.pdf" target="_blank" rel="noopener noreferrer" download className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-md border-slate-200 bg-white hover:bg-slate-50 text-slate-900 font-semibold shadow-sm transition-all hover:-translate-y-0.5" })}>
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download="Satya-Resume.pdf" className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-md border-slate-200 bg-white hover:bg-slate-50 text-slate-900 font-semibold shadow-sm transition-all hover:-translate-y-0.5" })}>
             Execute PDF_DL <Download className="ml-2 h-4 w-4" />
           </a>
           <Button onClick={() => setIsResumeOpen(true)} variant="outline" size="lg" className="rounded-md border-indigo-200 bg-indigo-50/50 hover:bg-indigo-100 text-indigo-700 font-semibold shadow-sm transition-all hover:-translate-y-0.5">
