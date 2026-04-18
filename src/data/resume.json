@@ -1,0 +1,34 @@
+{
+  "name": "Satya",
+  "title": "AI Engineer & Full Stack Developer",
+  "summary": "I am a Computer Science aspiring to build secure, scalable, and intelligent systems by blending AI, OS-level programming, and Full Stack development.",
+  "skills": {
+    "languages": ["Python", "JavaScript", "TypeScript", "C", "Go"],
+    "frameworks": ["Next.js", "React", "Node.js", "FastAPI", "TensorFlow", "React Native"],
+    "security": ["Penetration Testing", "Security Operations", "Wireshark", "Burp Suite"]
+  },
+  "experience": [
+    {
+      "role": "Python Developer",
+      "company": "Infosys Springboard",
+      "range": "2023 - Present",
+      "points": ["Developed and optimized Python-based backends", "Improved data processing workflows"]
+    },
+    {
+      "role": "Cyber Security Analyst",
+      "company": "The Drop Organization",
+      "range": "2022 - 2023",
+      "points": ["Performed penetration testing", "Secured internal applications against OWASP top 10 threats"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Stock Predictor",
+      "description": "Advanced ML model to forecast stock prices using real-time market data."
+    },
+    {
+      "name": "Custom Operating System",
+      "description": "Minimal educational OS written from scratch in C and Assembly."
+    }
+  ]
+}

@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, TerminalSquare } from "lucide-react";
+import { ArrowRight, Download, TerminalSquare, BrainCircuit } from "lucide-react";
 import ParticlesBackground from "@/components/three/Particles";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { ResumeDialog } from "@/components/ui/resume-dialog";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
   const title = "Hi, I'm Satya";
   const roles = "AI Engineer | Cybersecurity Analyst | Full Stack Developer";
 
@@ -68,7 +71,6 @@ export default function HeroSection() {
           </motion.p>
         </div>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,15 +80,20 @@ export default function HeroSection() {
           <a href="#projects" className={buttonVariants({ size: "lg", className: "rounded-full bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-all hover:scale-105" })}>
             View Projects <ArrowRight className="ml-2 h-4 w-4" />
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-full border-purple-500/50 hover:bg-purple-500/10 font-semibold transition-all hover:scale-105" })}>
+          <a href="/satya-resume.pdf" target="_blank" rel="noopener noreferrer" download className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-full border-purple-200 bg-white hover:bg-purple-50 text-foreground font-semibold shadow-sm transition-all hover:scale-105" })}>
             Download Resume <Download className="ml-2 h-4 w-4" />
           </a>
+          <Button onClick={() => setIsResumeOpen(true)} variant="outline" size="lg" className="rounded-full border-blue-200 bg-blue-50/50 hover:bg-blue-100 text-blue-700 font-semibold shadow-sm transition-all hover:scale-105">
+            Explain Resume <BrainCircuit className="ml-2 h-4 w-4" />
+          </Button>
         </motion.div>
       </div>
 
       {/* Decorative Neon Blurs */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px] z-0 pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px] z-0 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-purple-600/10 rounded-full blur-[128px] z-0 pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[128px] z-0 pointer-events-none" />
+
+      <ResumeDialog isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
     </section>
   );
 }

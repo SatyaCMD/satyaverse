@@ -7,6 +7,7 @@ import ExperienceSection from "@/components/sections/experience";
 import ProjectsSection from "@/components/sections/projects";
 import SkillsSection from "@/components/sections/skills";
 import CertificationsSection from "@/components/sections/certifications";
+import HobbiesSection from "@/components/sections/hobbies";
 import ContactSection from "@/components/sections/contact";
 import Navbar from "@/components/layout/navbar";
 import TerminalModal from "@/components/ui/terminal";
@@ -28,6 +29,7 @@ export default function Home() {
         <ProjectsSection />
         <SkillsSection />
         <CertificationsSection />
+        <HobbiesSection />
         <ContactSection />
       </div>
 

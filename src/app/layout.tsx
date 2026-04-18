@@ -27,7 +27,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
     >
-      <body className="min-h-screen bg-background text-foreground flex flex-col font-sans overflow-x-hidden selection:bg-purple-100">
+      <body className="min-h-screen bg-[#fafcff] text-foreground flex flex-col font-sans overflow-x-hidden selection:bg-purple-100">
+        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-purple-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "12s" }} />
+          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[60%] rounded-full bg-blue-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "15s", animationDelay: "2s" }} />
+          <div className="absolute -bottom-[20%] left-[20%] w-[60%] h-[50%] rounded-full bg-pink-300/20 blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: "18s", animationDelay: "5s" }} />
+        </div>
         {children}
       </body>
     </html>
