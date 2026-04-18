@@ -1,74 +1,140 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Framer_Motion-white?style=for-the-badge&logo=framer" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js" alt="Three.js" />
-  <h1>✨ Satya's Premium Portfolio</h1>
-  <p>A stunning, modern, and interactive personal developer portfolio built with the latest bleeding-edge technologies.</p>
+  
+  <br />
+  <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop" alt="Premium Developer Grid" width="100%" style="border-radius: 12px; margin-bottom: 2rem;" />
+
+  <h1>🚀 SATYA_VERSE // SYSTEM.PORTFOLIO</h1>
+
+  <p>
+    <strong>A high-performance, algorithmic, and deeply interactive personal portfolio.</strong><br/>
+    Bridging the gap between <i>Full-Stack Architecture</i>, <i>AI Engineering</i>, and <i>Cybersecurity</i>.
+  </p>
+
+  <p>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" /></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React" /></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind" /></a>
+    <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer_Motion-white?style=for-the-badge&logo=framer" alt="Framer Motion" /></a>
+    <a href="https://threejs.org/"><img src="https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js" alt="Three.js" /></a>
+  </p>
+
+  <p>
+    <a href="#-overview">Overview</a> •
+    <a href="#-core-architecture">Architecture</a> •
+    <a href="#-deploying-locally">Deployment</a> •
+    <a href="#-interactive-modules">Modules</a> •
+    <a href="#-contact--network">Contact</a>
+  </p>
 </div>
+
+---
+
+## 🌌 Overview
+
+Welcome to my personal ecosystem. This portfolio is engineered to serve not merely as a showcase of my skills, but as a live demonstration of what modern front-end web development looks like when combined with the precise aesthetics of trading analytics and developer tools.
+
+Built from the ground up on the bleeding-edge **Next.js 15 App Router** and **React 19**, it utilizes high-end hardware-accelerated animations, customized glassmorphic design systems, and a unique architectural blueprint aesthetic.
+
+## ⚡ Core Architecture
+
+This project is built to execute with Zero Layout Shift (CLS) and hyper-optimized Time To Interactive (TTI), relying on the following stack:
+
+| Concept | Technology | Purpose |
+|---------|-------------|---------|
+| **Core Framework** | `Next.js 15` & `React 19` | Server-Side Rendering (SSR), Native Routing, and Turbopack core speeds. |
+| **Design System** | `Tailwind CSS 4.0` | Algorithmic spacing, smoked glassmorphism, and trading grid tokens. |
+| **Physics & Kinetics** | `Framer Motion` | Complex component presence orchestration and layout animations. |
+| **WebGL & Particles** | `Three.js` (R3F) | High-performance interactive background particle rendering. |
+| **Data Structure** | `TypeScript` | Strict endpoint typing and deterministic JSON parsing for the Resume Engine. |
+
+---
+
+## 🎛 Interactive Modules
+
+<details>
+<summary><strong>✨ The 'Trading Desk' Light Protocol</strong></summary>
+<br>
+The UI breaks away from standard "light modes" by adopting an elite <i>Algorithmic Trading / IDE</i> aesthetic. Instead of flat white canvas, the background relies on a subtle mathematical layout grid featuring vertical tracking lines, giving the interface extreme depth and technical authority.
+</details>
+
+<details>
+<summary><strong>🤖 AI Resume Explainer Dialog</strong></summary>
+<br>
+A native headless modal powered by an internal dialogue system. The platform doesn't just let users "Download" a resume; it allows them to invoke an interactive breakdown of technical impact and project significance directly within the DOM.
+</details>
+
+<details>
+<summary><strong>🗂 3D Project Tilt Matrices</strong></summary>
+<br>
+Each project card utilizes Framer Motion to calculate the exact mouse coordinates relative to the component bounds, casting a real-time mathematical `rotateX` and `rotateY` 3D perspective distortion that feels like a native hardware OS window.
+</details>
+
+<details>
+<summary><strong>⌨️ Embedded Terminal Console</strong></summary>
+<br>
+Features a fully functioning interactive command-line interface popup. Try navigating via the terminal inside the browser to explore mocked directories and developer easter eggs.
+</details>
+
+---
+
+## 🚀 Deploying Locally
+
+To boot up the system locally, follow the execution instructions below:
+
+### 1. Initialize the Repository
+```bash
+# Clone the repository
+git clone https://github.com/SatyaCMD/satyaverse.git
+
+# Enter the system directory
+cd satyaverse
+```
+
+### 2. Install Dependencies
+```bash
+# Force install latest node modules
+npm install
+```
+
+### 3. Boot Development Server
+```bash
+# Start Turbopack via Next 15
+npm run dev
+```
+Navigate to `http://localhost:3000` to interact with the live environment.
+
+---
+
+## 📁 System Blueprint
+
+```text
+satyaverse/
+├── src/
+│   ├── app/                # Next.js 15 App Route Core (page, layout, globals)
+│   ├── components/         # Atomic Component Strategy
+│   │   ├── layout/         # High-level orchestrators (Navbar, Footer)
+│   │   ├── sections/       # Primary UI Partitions (Hero, Projects, Contact, Hobbies)
+│   │   ├── three/          # WebGL Physics rendering
+│   │   └── ui/             # Headless highly-interactive primitives (Shadcn extended)
+│   ├── data/               # Deterministic centralized data (resume.json)
+│   └── lib/                # Algorithmic utility functions (Tailwind mergers)
+├── public/                 # Static caching layer (Images, PDFs)
+└── *.ts/js/json            # System configuration layers
+```
+
+---
+
+## 📫 Contact & Network
+
+Interested in discussing distributed systems, quantitative analysis, cybersecurity, or full-stack integrations? Open a channel below:
+
+- **Mail Protocol**: [saisatyabrata952@gmail.com](mailto:saisatyabrata952@gmail.com)
+- **GitHub Network**: [@SatyaCMD](https://github.com/SatyaCMD)
+- **LinkedIn Grid**: [Sai Satyabrata](https://www.linkedin.com/in/sai-satyabrata-623311280)
 
 <br />
 
-## 🚀 Overview
-Welcome to my personal web portfolio ecosystem! This project is designed not just to elegantly display my experience as an AI Engineer, Cybersecurity Analyst, and Full Stack Developer, but also to serve as a benchmark for modern front-end web design. It features a complete Light Professional theme, cutting-edge CSS layouts, deep React 3D animations, and native system-like routing.
-
-## 🛠 Features
-- **3D Interactive Backgrounds**: Uses `@react-three/fiber` and `@react-three/drei` for highly optimized star particle backgrounds that respond natively to resize and canvas bounds.
-- **Project Tilt Cards**: Hover dynamically over the Featured Projects to visualize beautiful 3D tilt behaviors created with custom `perspective` and `framer-motion` calculation loops.
-- **Interactive Bash Terminal**: Features a fully functioning interactive command-line interface popup. Try navigating via the terminal inside the browser!
-- **Custom Cursor Hardware**: Built a custom Framer Motion cursor follower bridging interactions beautifully with clickable actions.
-- **Glassmorphism UI**: Uses extensive backdrop-blurs, transparent layered overlays, and sleek semantic variables adapting beautifully to modern standards.
-- **Modern Routing & Tooling**: Built exclusively with Next.js 15 App Router standard utilizing Turbopack. Fully typed and built on modern `Tailwind CSS v4`.
-
-## 💻 Tech Stack
-- **Framework**: `Next.js (App Router)`
-- **Styling**: `Tailwind CSS`, `Shadcn UI`
-- **Animations**: `Framer Motion`
-- **3D Rendering**: `Three.js`, `React Three Fiber`
-- **Language**: `TypeScript`
-
-## ⚙️ Getting Started
-
-### Prerequisites
-Make sure you have Node.js (v18 or higher) and npm installed on your system.
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/SatyaCMD/satyaverse.git
-   cd satyaverse
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to interact with the application.
-
-## 📁 Architecture Highlights
-```text
-/src
- ├── /app              # Next.js 15 App entrypoints, page.tsx and layout configs.
- ├── /components
- │    ├── /layout      # Shared layout configurations like Navbar and footers.
- │    ├── /sections    # View logic divided by modules (Hero, About, Projects).
- │    ├── /three       # WebGL / React Three Fiber contexts (Particles).
- │    └── /ui          # Headless UI primitives (Shadcn, Project Cards, Terminal).
- └── /lib              # Shared utilities and Tailwind class integrators.
-```
-
-## 📫 Contact
-Interested in collaborating or discussing AI/Cybersecurity? Let's connect!
-- **GitHub**: [SatyaCMD](https://github.com/SatyaCMD)
-- **LinkedIn**: [Sai Satyabrata](https://www.linkedin.com/in/sai-satyabrata-623311280)
-- **Website**: [SatyaCMD](https://www.satyacmd.dev)
-
-<p align="center"><i>Crafted with passion using Next.js 15 and Tailwind CSS.</i></p>
+<div align="center">
+  <i>System architecture designed and executed by Satya.</i><br />
+  <code>status: ALL_SYSTEMS_OPERATIONAL</code>
+</div>
