@@ -1,7 +1,6 @@
 <div align="center">
   
   <br />
-  <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop" alt="Premium Developer Grid" width="100%" style="border-radius: 12px; margin-bottom: 2rem;" />
 
   <h1>🚀 SATYA_VERSE // SYSTEM.PORTFOLIO</h1>
 
