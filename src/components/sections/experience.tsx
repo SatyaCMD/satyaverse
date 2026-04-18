@@ -8,21 +8,21 @@ const experiences = [
   {
     title: "Python Developer",
     company: "Infosys Springboard",
-    date: "2023 - Present",
+    date: "November 2025 – January 2026",
     description: "Developed and optimized Python-based backends, improving data processing workflows and contributing to open-source style initiatives internally.",
     skills: ["Python", "Django", "REST APIs", "Data Pipelines", "SQL"],
   },
   {
     title: "Cyber Security Analyst",
     company: "The Drop Organization",
-    date: "2022 - 2023",
+    date: "July 2025 – September 2025",
     description: "Performed penetration testing, identified security vulnerabilities, and crafted mitigation reports. Secured internal applications against OWASP top 10 threats.",
     skills: ["Penetration Testing", "OWASP Top 10", "Burp Suite", "Network Sniffing", "Report Writing"],
   },
   {
     title: "Cyber Security Engineer",
     company: "DRDO",
-    date: "2021 - 2022",
+    date: "March 2023 – July 2024",
     description: "Collaborated on defense-level security protocols, analyzing network traffic for anomaly detection, and hardening critical infrastructure systems.",
     skills: ["Threat Intelligence", "Wireshark", "Linux Sec", "Splunk", "Incident Response"],
   }
@@ -39,7 +39,7 @@ export default function ExperienceSection() {
     <section id="experience" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 text-center">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -47,7 +47,7 @@ export default function ExperienceSection() {
           >
             Experience
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: "100px" }}
             viewport={{ once: true }}
@@ -59,10 +59,10 @@ export default function ExperienceSection() {
         <div className="max-w-4xl mx-auto relative cursor-default">
           {/* Vertical Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400/50 via-blue-400/50 to-transparent -translate-x-1/2 hidden md:block" />
-          
+
           <div className="space-y-16 relative z-10">
             {experiences.map((exp, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -71,14 +71,14 @@ export default function ExperienceSection() {
                 className={`flex flex-col md:flex-row items-start justify-between ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
               >
                 <div className="hidden md:block md:w-1/2 px-8" />
-                
+
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 w-10 h-10 rounded-full bg-white border-4 border-purple-500 -translate-x-1/2 flex items-center justify-center shadow-[0_0_15px_rgba(168,85,247,0.4)] mt-4 md:mt-0 z-20">
                   <div className="w-3 h-3 rounded-full bg-blue-500" />
                 </div>
-                
+
                 <div className="w-full md:w-1/2 pl-12 md:pl-0 md:px-8 mt-2 md:mt-0">
-                  <div 
+                  <div
                     onClick={() => toggleExpand(index)}
                     className={`p-8 rounded-3xl bg-white/60 backdrop-blur-xl border cursor-pointer transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1 group ${expandedIndex === index ? 'border-purple-300/80 ring-4 ring-purple-500/10' : 'border-white/60 hover:border-purple-200/80 hover:bg-white/80'}`}
                   >
@@ -91,7 +91,7 @@ export default function ExperienceSection() {
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {exp.description}
                     </p>
-                    
+
                     <AnimatePresence>
                       {expandedIndex === index && (
                         <motion.div
