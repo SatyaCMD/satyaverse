@@ -24,7 +24,7 @@ const projects = [
     title: "Airline Booking Simulator",
     description: "A comprehensive booking system simulator modeling multi-user reservations, database concurrency, and ticketing edge cases.",
     tags: ["Python", "DJango", "MongoDB", "JavaScript"],
-    githubUrl: "https://github.com/SatyaCMD/Flight-Booking-Simulator-with-Dynamic-Pricing",
+    githubUrl: "https://github.com/SatyaCMD/SkyHigh",
     liveUrl: "https://skyhigh.satyacmd.dev/",
     imageUrls: ["/project_airline (dashboard).png", "/project_airline (booking_page).png", "/project_airline (otp_page).png", "/project_airline (boarding_pass).png", "/project_airline (ticket_confirmation).png"],
   }
