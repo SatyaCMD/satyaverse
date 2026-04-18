@@ -1,6 +1,4 @@
 <div align="center">
-  
-  <br />
 
   <h1>🚀 SATYA_VERSE // SYSTEM.PORTFOLIO</h1>
 
