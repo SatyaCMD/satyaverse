@@ -8,26 +8,25 @@ const projects = [
     title: "AI Stock Price Predictor",
     description: "An advanced machine learning model to forecast stock prices using real-time market data. Built with an intuitive dashboard for interactive analysis.",
     tags: ["Python", "TensorFlow", "React", "Next.js", "FastAPI"],
-    githubUrl: "https://github.com/SatyaCMD",
-    liveUrl: "https://satya.dev",
-    imageUrls: ["/project_aistock.png", "/project_aistock_2.png"],
+    githubUrl: "https://github.com/SatyaCMD/ai-stock-price-predictor",
+    liveUrl: "https://ai-stockprice-predictor.satyacmd.dev/",
+    imageUrls: ["/project_aistock (dashboard).png", "project_aistock (login_page).png", "project_aistock (signup_page).png", "project_aistock (otp_page).png"],
     isHighlighted: true,
   },
   {
-    title: "Custom Operating System",
+    title: "Custom Operating System (AxiomOS)",
     description: "A minimal, educational operating system written from scratch to understand process management, memory allocation, and hardware interactions.",
-    tags: ["C", "Assembly", "x86 Architecture", "Make"],
-    githubUrl: "https://github.com/SatyaCMD",
-    liveUrl: "https://satya.dev",
-    imageUrls: ["/project_os.png", "/project_os_2.png"],
+    tags: ["Shell-Scripting", "Bash-Scripting", "x86 Architecture"],
+    githubUrl: "https://github.com/SatyaCMD/Axiom-OS-The-Custom-made-OS",
+    imageUrls: ["/project_os(login).png", "/project_os(os_installation).png", "/project_os(desktop).png", "/project_os(terminal).png", "/project_os(shutdown).png"],
   },
   {
     title: "Airline Booking Simulator",
     description: "A comprehensive booking system simulator modeling multi-user reservations, database concurrency, and ticketing edge cases.",
-    tags: ["Java", "Spring Boot", "MySQL", "Docker"],
-    githubUrl: "https://github.com/SatyaCMD",
-    liveUrl: "https://satya.dev",
-    imageUrls: ["/project_airline.png", "/project_airline_2.png"],
+    tags: ["Python", "DJango", "MongoDB", "JavaScript"],
+    githubUrl: "https://github.com/SatyaCMD/Flight-Booking-Simulator-with-Dynamic-Pricing",
+    liveUrl: "https://skyhigh.satyacmd.dev/",
+    imageUrls: ["/project_airline (dashboard).png", "/project_airline (booking_page).png", "/project_airline (otp_page).png", "/project_airline (boarding_pass).png", "/project_airline (ticket_confirmation).png"],
   }
 ];
 
@@ -36,7 +35,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -45,7 +44,7 @@ export default function ProjectsSection() {
           >
             Featured Projects
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: "80px" }}
             viewport={{ once: true }}
