@@ -76,7 +76,7 @@ export function ProjectCard({ title, description, tags, githubUrl, liveUrl, imag
     if (isOpen && hasImages && imageUrls && imageUrls.length > 1) {
       interval = setInterval(() => {
         setCurrentImageIndex((prev) => (prev + 1) % imageUrls.length);
-      }, 2000); // 2 seconds per image
+      }, 5000); // 5 seconds per image
     }
     return () => {
       if (interval) clearInterval(interval);
