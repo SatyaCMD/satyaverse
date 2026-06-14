@@ -5,6 +5,15 @@ import { ProjectCard } from "@/components/ui/project-card";
 
 const projects = [
   {
+    title: "IRCTC v2-Next Generation of e-ticketing",
+    description: "A production-grade railway reservation system inspired by IRCTC, featuring real-time train search, ticket booking, seat allocation, RAC/waitlist management, OTP-based authentication, and transaction-safe reservation workflows.",
+    tags: ["React", "Next.js", "Node.js", "Express.js", "MongoDB"],
+    githubUrl: "https://github.com/SatyaCMD/IRCTC-NextGen.git",
+    liveUrl: "https://irctcv2.satyacmd.dev",
+    imageUrls: ["/project_irctc(Main Page).png", "/project_irctc(Login Page).png", "/project_irctc(Booking Page).png", "/project_irctc(Seat Layout).png", "/project_irctc(Payment Gateway).png", "/project_irctc(Ticket Booking Confirmation).png", "/project_irctc(PNR Status).png", "/project_irctc(Booking History).png", "/project_irctc(Refund History).png", "/project_irctc(Live Train Running Status).png", "/project_irctc(Holiday Pack).png", "/project_irctc(E-cattering Booking).png"],
+    isHighlighted: true,
+  },
+  {
     title: "AI Stock Price Predictor",
     description: "An advanced machine learning model to forecast stock prices using real-time market data. Built with an intuitive dashboard for interactive analysis.",
     tags: ["Python", "TensorFlow", "React", "Next.js", "FastAPI"],
