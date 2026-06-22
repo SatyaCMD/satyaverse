@@ -5,37 +5,37 @@ import { Award, Trophy, ChevronDown, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
 const certifications = [
-  { 
-    title: "Python Essentials 1", 
-    issuer: "Cisco Networking Academy", 
+  {
+    title: "Python Essentials 1",
+    issuer: "Cisco Networking Academy",
     date: "Jul 2023",
     description: "Built a strong foundation in Python syntax, multi-paradigm programming, and standard library utilization.",
     techStack: ["Python 3", "Data Structures", "Algorithms"]
   },
-  { 
-    title: "Cybersecurity Essentials", 
-    issuer: "Cisco Networking Academy", 
+  {
+    title: "Cybersecurity Essentials",
+    issuer: "Cisco Networking Academy",
     date: "Jul 2023",
     description: "Learned the principles of data confidentiality, integrity, and availability. Assessed vulnerabilities and implemented defensive architectures.",
     techStack: ["Network Security", "Cryptography", "Threat Mitigation"]
   },
-  { 
-    title: "Introduction to Internet of Things (IoT)", 
-    issuer: "Cisco Networking Academy", 
+  {
+    title: "Introduction to Internet of Things (IoT)",
+    issuer: "Cisco Networking Academy",
     date: "Jul 2023",
     description: "Explored the integration of operational technology and IT systems. Programmed micro-controllers to communicate securely over networks.",
     techStack: ["IoT Standards", "C++", "Network Protocols"]
   },
-  { 
-    title: "Artificial Intelligence Job Simulation", 
-    issuer: "Cognizant", 
+  {
+    title: "Artificial Intelligence Job Simulation",
+    issuer: "Cognizant",
     date: "Dec 2023",
     description: "Extracted actionable insights from massive datasets. Engineered workflows for predictive AI modeling tailored to enterprise requirements.",
     techStack: ["Machine Learning", "Data Analysis", "Python"]
   },
-  { 
-    title: "Building Android Apps with React Native", 
-    issuer: "Professional Development", 
+  {
+    title: "Building Android Apps with React Native",
+    issuer: "Professional Development",
     date: "Sep 2024",
     description: "Developed and deployed enterprise-grade cross-platform mobile applications using the latest React Native tools and custom native hooks.",
     techStack: ["React Native", "JavaScript", "Mobile UI/UX"]
@@ -43,8 +43,8 @@ const certifications = [
 ];
 
 const achievements = [
-  { 
-    title: "DRDO Placement Offer", 
+  {
+    title: "DRDO Placement Offer",
     description: "Offered elite placement at DRDO after demonstrating exceptional skills in cybersecurity.",
     impact: "This rare opportunity verified my ability to handle defense-grade security protocols, network anomaly detection, and the hardening of mission-critical infrastructure under extreme security clearances."
   }
@@ -68,11 +68,11 @@ export default function CertificationsSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
+
           {/* Certifications */}
           <div>
             <div className="mb-12">
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -83,7 +83,7 @@ export default function CertificationsSection() {
                 </div>
                 Certifications
               </motion.h2>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, width: 0 }}
                 whileInView={{ opacity: 1, width: "100px" }}
                 viewport={{ once: true }}
@@ -153,7 +153,7 @@ export default function CertificationsSection() {
           {/* Achievements */}
           <div>
             <div className="mb-12">
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -164,7 +164,7 @@ export default function CertificationsSection() {
                 </div>
                 Achievements
               </motion.h2>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, width: 0 }}
                 whileInView={{ opacity: 1, width: "100px" }}
                 viewport={{ once: true }}

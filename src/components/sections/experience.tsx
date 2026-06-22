@@ -18,13 +18,6 @@ const experiences = [
     date: "July 2025 – September 2025",
     description: "Performed penetration testing, identified security vulnerabilities, and crafted mitigation reports. Secured internal applications against OWASP top 10 threats.",
     skills: ["Penetration Testing", "OWASP Top 10", "Burp Suite", "Network Sniffing", "Report Writing"],
-  },
-  {
-    title: "Cyber Security Engineer",
-    company: "DRDO",
-    date: "March 2023 – July 2024",
-    description: "Collaborated on defense-level security protocols, analyzing network traffic for anomaly detection, and hardening critical infrastructure systems.",
-    skills: ["Threat Intelligence", "Wireshark", "Linux Sec", "Splunk", "Incident Response"],
   }
 ];
 
